@@ -13,7 +13,7 @@ const SearchPage = () => {
       return;
     }
     fetchEventsByName(eventName).then(setEvents);
-  }, [eventName]);
+  }, [eventName, events.name]);
 
   const handleSubmit = e => {
     e.preventDefault();
